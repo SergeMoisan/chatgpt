@@ -18,7 +18,7 @@ parallelize_code <- function(code = clipr::read_clip(allow_non_interactive = TRU
   # Nettoyage du code
   code <- paste(gsub('"', "'", code), collapse = "\n")
   
-  # Construire le prompt
+  # Build the prompt
   prompt <- paste0(
     "Rewrite the following R code using parallel computing best practices. ",
     "Preferably use packages like 'parallel', 'future', or 'foreach'. ",
@@ -26,6 +26,6 @@ parallelize_code <- function(code = clipr::read_clip(allow_non_interactive = TRU
     code
   )
   
-  # Appeler GPT via ta fonction existante
+  # Call GPT via existing function
   parse_response(gpt_get_completions(prompt))
 }
