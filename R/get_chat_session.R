@@ -3,7 +3,7 @@
 #' @param session_id The ID of the session to be used. If `NULL`, it will return an empty session.
 #'
 get_chat_session <- function(session_id = "1") {
-  default_session <- list(list(role = "system", content = "You are a helpful assistant."))
+  default_session <- list(list(role = "system", content = "You are a helpful assistant who help coding in R."))
   if (is.null(session_id)) {
     return(default_session)
   }
