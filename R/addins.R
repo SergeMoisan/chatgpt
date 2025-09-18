@@ -16,6 +16,7 @@ run_addin <- function(addin_name) {
     "find_issues_in_code" = find_issues_in_code,
     "optimize_code" = optimize_code,
     "refactor_code" = refactor_code,
+    "parallelize_code" = parallelize_code
     stop("`addin_name` not found.")
   )
   # Get the selected code.
