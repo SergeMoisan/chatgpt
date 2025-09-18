@@ -8,7 +8,7 @@
 #'
 #' @export
 #'
-reset_chat_session <- function(system_role = "You are a helpful assistant.", session_id = "1") {
+reset_chat_session <- function(system_role = "You are a helpful assistant with extensive knowledge in R.", session_id = "1") {
   if (is.null(session_id)) {
     return()
   }
