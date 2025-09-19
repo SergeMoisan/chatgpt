@@ -21,7 +21,7 @@ parallelize_code <- function(code = clipr::read_clip(allow_non_interactive = TRU
   # Build the prompt
   prompt <- paste0(
     "Rewrite the following R code using parallel computing best practices. ",
-    "Preferably use packages like 'parallel', 'future', or 'foreach'. ",
+    "Preferably use packages like 'furrr','parallel', 'future', or 'foreach'. ",
     "Ensure the output is equivalent. Code to parallelize:\n\n",
     code
   )
