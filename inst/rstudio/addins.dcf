@@ -47,3 +47,8 @@ Name: Refactor selected code
 Description: Refactor the selected code
 Binding: run_addin_refactor_code
 Interactive: false
+
+Name: Parallelize selected code
+Description: Parallelize the selected code
+Binding: run_addin_parallelize_code
+Interactive: false
